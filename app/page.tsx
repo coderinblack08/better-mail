@@ -1,7 +1,7 @@
 import { auth } from "@/auth";
 import Profile from "@/components/profile";
 import { SignIn } from "@/components/sign-in";
-
+import SendEmail from "@/components/send-email";
 export default async function Home() {
   const session = await auth();
 
@@ -16,6 +16,7 @@ export default async function Home() {
   return (
     <div>
       <Profile />
+      <SendEmail />
     </div>
   );
 }
